@@ -1,13 +1,13 @@
 /* General */
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #FFFFFF;
-  color: #2B2B2B;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #2b2b2b;
 }
 
 /* Navbar */
 .navbar {
-  background-color: #2B2B2B;
+  background-color: #2b2b2b;
 }
 
 .navbar-brand img {
@@ -15,47 +15,47 @@ body {
 }
 
 .nav-link {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 .nav-link:hover {
-  color: #FF4949 !important;
+  color: #ff4949 !important;
 }
 
 .dropdown-menu {
-  background-color: #2B2B2B;
+  background-color: #2b2b2b;
 }
 
 .dropdown-item {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .dropdown-item:hover {
-  color: #FF4949;
+  color: #ff4949;
   background-color: transparent;
 }
 
 /* Jumbotron */
 .main-section {
   background-color: #555555;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 100px 0;
   margin-top: 56px; /* Ajusta para el alto de la navbar fija */
 }
 
 .main-section .display-4 {
-  font-family: 'Aileron Black', sans-serif;
+  font-family: "Aileron Black", sans-serif;
 }
 
 .main-section .lead {
-  font-family: 'Aileron Light', sans-serif;
+  font-family: "Aileron Light", sans-serif;
 }
 
 /* Estilos para el título de la sección */
 .section-title {
-  font-family: 'Aileron Black', sans-serif;
+  font-family: "Aileron Black", sans-serif;
   font-size: 2rem;
-  color: #2B2B2B;
+  color: #2b2b2b;
   margin-bottom: 40px;
   position: relative;
   text-transform: uppercase;
@@ -64,11 +64,11 @@ body {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   display: block;
   width: 60px;
   height: 5px;
-  background-color: #FF4949;
+  background-color: #ff4949;
   margin: 10px auto;
   border-radius: 2.5px;
 }
@@ -78,8 +78,10 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #FFFFFF;
-  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #ffffff;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .product-card:hover {
@@ -88,7 +90,7 @@ body {
 }
 
 .product-card img {
-  width: 100%;  /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
   object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
 }
 
@@ -101,34 +103,36 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.60rem !important;
+  padding: 1.6rem !important;
 }
 
 .product-card .card-title {
-  font-family: 'Aileron', sans-serif;
+  font-family: "Aileron", sans-serif;
   font-weight: bold;
   font-size: 1.25rem;
   margin-bottom: 15px;
 }
 
 .product-card .card-text {
-  color: #0FA958;
+  color: #0fa958;
   font-weight: semibold;
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
 .product-card .btn-primary {
-  background-color: #FF4949;
-  border-color: #FF4949;
+  background-color: #ff4949;
+  border-color: #ff4949;
   font-size: 1rem;
   padding: 10px 20px;
   border-radius: 50px;
-  transition: background-color 0.3s, transform 0.3s;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
 }
 
 .product-card .btn-primary:hover {
-  background-color: #CC3A3A;
+  background-color: #cc3a3a;
   transform: scale(1.05);
 }
 
@@ -148,16 +152,15 @@ body {
   animation: fadeInUp 0.5s ease-out;
 }
 
-
 /* Footer */
 footer {
-  background-color: #2B2B2B;
-  color: #FFFFFF;
+  background-color: #2b2b2b;
+  color: #ffffff;
   padding: 40px 0;
 }
 
 footer h5 {
-  font-family: 'Aileron', sans-serif;
+  font-family: "Aileron", sans-serif;
   font-weight: bold;
 }
 
@@ -171,12 +174,12 @@ footer ul li {
 }
 
 footer ul li a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
 footer ul li a:hover {
-  color: #FF4949;
+  color: #ff4949;
   text-decoration: none;
 }
 
@@ -198,18 +201,18 @@ footer ul li a:hover {
 }
 
 .footer-socials a:hover {
-  color: #FF4949;
+  color: #ff4949;
 }
 
 @font-face {
-  font-family: 'Aileron Black';
-  src: url('recursos/aileron.black.otf') format('opentype');
+  font-family: "Aileron Black";
+  src: url("recursos/aileron.black.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Aileron Bold';
-  src: url('recursos/aileron.bold.otf') format('opentype');
+  font-family: "Aileron Bold";
+  src: url("recursos/aileron.bold.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Aileron Light';
-  src: url('recursos/aileron.light.otf') format('opentype');
+  font-family: "Aileron Light";
+  src: url("recursos/aileron.light.otf") format("opentype");
 }
