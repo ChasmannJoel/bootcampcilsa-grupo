@@ -10,113 +10,152 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="https://kit.fontawesome.com/11fe7ac5ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <!-- Barra de Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">StoreOnline</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="paginas/categoria.html">Categoría</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
+  <!-- Menú de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="index.html">
+      <img src="../recursos/logoBlanco.png" alt="BASIC Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="categorias.html" id="productosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Productos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="productosDropdown">
+            <a class="dropdown-item" href="categorias.html">Buzos</a>
+            <a class="dropdown-item" href="categorias.html">Remeras</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    
     <!-- Sección Principal -->
-    <div class="jumbotron text-center">
-      <h1 class="display-4">¡Bienvenido a StoreOnline!</h1>
-      <p class="lead">
-        Explora nuestra colección de productos de alta calidad.
-      </p>
+    <div class="jumbotron text-center main-section">
+      <h1 class="display-4">¡Bienvenido a BASIC!</h1>
+      <p class="lead">Explora nuestra colección de productos de alta calidad.</p>
     </div>
 
     <!-- Productos Destacados -->
     <div class="container">
       <h2 class="text-center my-4">Productos Destacados</h2>
       <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="img/producto1.jpg"
-              class="card-img-top"
-              alt="Producto 1"
-            />
-            <div class="card-body">
+        <!-- Producto 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-lg product-card">
+            <img src="img/producto1.jpg" class="card-img-top" alt="Producto 1" />
+            <div class="card-body text-center">
               <h5 class="card-title">Producto 1</h5>
               <p class="card-text">$99.99</p>
-              <a href="paginas/detalle-producto.html" class="btn btn-primary"
-                >Ver Detalles</a
-              >
+              <a href="paginas/detalle-producto.html" class="btn btn-primary">Ver Detalles</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="img/producto2.jpg"
-              class="card-img-top"
-              alt="Producto 2"
-            />
-            <div class="card-body">
+        <!-- Producto 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-lg product-card">
+            <img src="img/producto2.jpg" class="card-img-top" alt="Producto 2" />
+            <div class="card-body text-center">
               <h5 class="card-title">Producto 2</h5>
               <p class="card-text">$149.99</p>
-              <a href="paginas/detalle-producto.html" class="btn btn-primary"
-                >Ver Detalles</a
-              >
+              <a href="paginas/detalle-producto.html" class="btn btn-primary">Ver Detalles</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="img/producto3.jpg"
-              class="card-img-top"
-              alt="Producto 3"
-            />
-            <div class="card-body">
+        <!-- Producto 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-lg product-card">
+            <img src="img/producto3.jpg" class="card-img-top" alt="Producto 3" />
+            <div class="card-body text-center">
               <h5 class="card-title">Producto 3</h5>
               <p class="card-text">$199.99</p>
-              <a href="paginas/detalle-producto.html" class="btn btn-primary"
-                >Ver Detalles</a
-              >
+              <a href="paginas/detalle-producto.html" class="btn btn-primary">Ver Detalles</a>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-lg product-card">
+            <img src="img/producto4.jpg" class="card-img-top" alt="Producto 4" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Producto 4</h5>
+              <p class="card-text">$249.99</p>
+              <a href="paginas/detalle-producto.html" class="btn btn-primary">Ver Detalles</a>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-lg product-card">
+            <img src="img/producto5.jpg" class="card-img-top" alt="Producto 5" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Producto 5</h5>
+              <p class="card-text">$299.99</p>
+              <a href="paginas/detalle-producto.html" class="btn btn-primary">Ver Detalles</a>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-lg product-card">
+            <img src="img/producto6.jpg" class="card-img-top" alt="Producto 6" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Producto 6</h5>
+              <p class="card-text">$349.99</p>
+              <a href="paginas/detalle-producto.html" class="btn btn-primary">Ver Detalles</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Pie de Página -->
-    <footer class="text-center py-4">
-      <p>&copy; 2024 StoreOnline. Todos los derechos reservados.</p>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="../recursos/logoMinBlanco.png" alt="BASIC Logo" class="img-fluid" />
+          </div>
+          <div class="col-md-4">
+            <h5>Menú</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Redes Sociales</h5>
+            <ul class="list-unstyled footer-socials">
+              <li><a href="#" class="fab fa-facebook-f"></a></li>
+              <li><a href="#" class="fab fa-twitter"></a></li>
+              <li><a href="#" class="fab fa-instagram"></a></li>
+              <li><a href="#" class="fab fa-linkedin-in"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 BASIC. Todos los derechos reservados.</p>
+        </div>
+      </div>
     </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12t5j9g7AxQdxPPRZP0tGZZR9e25AVGyf5k7hbE2W/8+b/bk"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
+

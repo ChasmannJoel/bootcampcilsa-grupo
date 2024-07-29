@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del Producto - BASIC</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="../styles.css" rel="stylesheet">
+</head>
+<body>
+
+ <!-- Menú de Navegación -->
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <a class="navbar-brand" href="index.html">
+    <img src="../recursos/logoBlanco.png" alt="BASIC Logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inicio</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="categorias.html" id="productosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Productos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="productosDropdown">
+          <a class="dropdown-item" href="categorias.html">Parte de arriba</a>
+          <a class="dropdown-item" href="categorias.html">Parte de abajo</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacto.html">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  
+<!--
+<div class="row additional-info">
+  <div class="col-12">
+    <h4 >Más Información</h4>
+    <p >Aquí puedes añadir más detalles como políticas de devolución, reseñas de clientes, y otra información relevante que pueda ayudar a los usuarios a tomar una decisión de compra.</p>
+  </div>
+</div>
+-->
+
+<!--formulario de contacto-->
+<div style="padding: 15px;"></div>
+<section id="contacto" class="content mt-5">
+    <div class="row mt-5">
+        <div class="col-4 container p-5" style="background-color: #e4e2dd;">
+            <div class="row">
+                <h5 class="mb-3">INFORMACIÓN DE CONTACTO</h5>
+                <p class="mb-5">El lugar que estabas buscando</p>
+                <div class="col-md-12">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="text-decoration-none text-dark d-block mb-5"><i class="bi bi-telephone-fill pr-4"></i>Telefono</a>
+                        <a href="#" class="text-decoration-none text-dark d-block mb-5"><i class="bi bi-envelope-fill pr-4"></i>basic@gmail.com</a>
+                        <a href="#" class="text-decoration-none text-dark d-block "><i class="bi bi-geo-alt-fill pr-4"></i>Rivadavia 2567, Mar del Plata, Buenos Aires, Argentina</a>
+                    </div>
+                </div>
+                <div class="social-icons ml-3 mt-5">
+                    <i class="bi bi-twitter-x"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="col-8 p-5">
+                <form id="contactForm" onsubmit="return enviarFormulario()">
+                    <div class="row pb-5">
+                        <div class="col-md-6 form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="input-underline form-control" id="nombre" placeholder="Ingresa su nombre" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" class="input-underline form-control" id="apellido" placeholder="Ingresa su apellido" required>
+                        </div>
+                    </div>
+                    <div class="row pb-5">
+                        <div class="col-md-6 form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="input-underline form-control" id="email" placeholder="Ingresa su email" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="telefono">Telefono</label>
+                            <input type="text" class="input-underline form-control" id="telefono" placeholder="Ingresa su número" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="input-underline form-control" id="mensaje" rows="3" placeholder="Ingresa su mensaje"></textarea>
+                    </div>
+                    <div class=" d-md-flex justify-content-md-end mt-5">  
+                        <button type="submit" class="btn btn-dark ">Enviar Mensaje</button>
+                    </div>                
+            </form> 
+            <div id="mensaje-exito" class="alert alert-success d-none mt-3" role="alert">
+                Mensaje enviado con éxito!
+            </div>
+        </div>
+      
+</div>
+            
+</section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="../recursos/logoMinBlanco.png" alt="BASIC Logo" class="img-fluid" />
+          </div>
+          <div class="col-md-4">
+            <h5>Menú</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Redes Sociales</h5>
+            <ul class="list-unstyled footer-socials">
+              <li><a href="#" class="fab fa-facebook-f"></a></li>
+              <li><a href="#" class="fab fa-twitter"></a></li>
+              <li><a href="#" class="fab fa-instagram"></a></li>
+              <li><a href="#" class="fab fa-linkedin-in"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 BASIC. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+ 
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+  
