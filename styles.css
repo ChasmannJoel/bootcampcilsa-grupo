@@ -312,3 +312,58 @@ footer ul li a:hover {
 .social-icons i:last-child {
   margin-right: 0;
 }
+
+
+/* INDEX CSS CLASES*/ 
+.section-title {
+  font-family: 'Aileron Black', sans-serif;
+  font-size: 2rem;
+  color: #2B2B2B;
+  margin-bottom: 40px;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  background-color: #FF4949;
+  margin: 10px auto;
+  border-radius: 2.5px;
+}
+
+.product-card .card-body {
+  padding: 20px;
+}
+
+.product-card .btn-primary {
+  background-color: #FF4949;
+  border-color: #FF4949;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.product-card .btn-primary:hover {
+  background-color: #CC3A3A;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-card {
+  animation: fadeInUp 0.5s ease-out;
+}
