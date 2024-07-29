@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Aileron Black';
+    src: url('recursos/aileron.black.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Aileron Bold';
+    src: url('recursos/aileron.bold.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Aileron Light';
+    src: url('recursos/aileron.light.otf') format('opentype');
+  }
+  
+  :root {
+    --color-primario: #2B2B2B;
+    --color-secundario: #e4e2dd;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    color: #2B2B2B;
+  }
+  .navbar {
+    background-color: #2B2B2B;
+    padding: 1rem;
+  }
+  .navbar-brand img {
+    height: 40px;
+  }
+  .navbar-nav .nav-link {
+    color: #e4e2dd;
+    margin-right: 20px;
+  }
+  .navbar-nav .nav-link:hover, .navbar-nav .dropdown-item:hover {
+    color: #2B2B2B;
+  }
+  .dropdown-menu {
+    background-color: #2B2B2B;
+    border: none;
+  }
+  .dropdown-item {
+    color: #e4e2dd;
+  }
+  .dropdown-item:hover {
+    background-color: #FF4949;
+    color: white;
+  }
+  .dropdown-item:focus, .dropdown-item:active {
+    background-color: #FF4949;
+    color: #e4e2dd;
+  }
+  
+  footer {
+    background-color: #2B2B2B;
+    padding: 20px 0;
+    color: #e4e2dd;
+  }
+  footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+  footer h5 {
+    font-family: 'Aileron Black', sans-serif;
+    margin-bottom: 10px;
+    color: ##e4e2dd;
+  }
+  footer p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: ##e4e2dd;
+  }
+  footer a {
+    color: #e4e2dd;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #FF4949;
+  }
+  .footer-socials {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-socials li {
+    display: inline;
+    margin-right: 10px;
+  }
+  .footer-socials a {
+    color: #e4e2dd;
+    font-size: 1.2rem;
+  }
+  .footer-socials a:hover {
+    color: #FF4949;
+  }
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444444;
+    margin-top: 20px;
+  }
