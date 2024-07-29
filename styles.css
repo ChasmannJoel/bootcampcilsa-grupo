@@ -37,7 +37,7 @@ body {
 
 /* Jumbotron */
 .main-section {
-  background-color: #5e5c5c;
+  background-color: #2B2B2B;
   color: #FFFFFF;
   padding: 100px 0;
   margin-top: 56px; /* Ajusta para el alto de la navbar fija */
@@ -51,41 +51,100 @@ body {
   font-family: 'Aileron Light', sans-serif;
 }
 
+/* Estilos para el título de la sección */
+
+.section-title {
+  font-family: 'Aileron Black', sans-serif;
+  font-size: 2rem;
+  color: #2B2B2B;
+  margin-bottom: 40px;
+  position: relative;
+  text-transform: uppercase;
+  /* letter-spacing: 1px; */
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  background-color: #FF4949;
+  margin: 10px auto;
+  border-radius: 2.5px;
+}
+
 /* Productos Destacados */
 .product-card {
   background-color: #FFFFFF;
+  border-radius: 15px;
+  overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .product-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .product-card img {
-  height: 200px;
+  height: 250px;
   object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+.product-card .card-body {
+  padding: 20px;
 }
 
 .product-card .card-title {
   font-family: 'Aileron', sans-serif;
   font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 15px;
 }
 
 .product-card .card-text {
   color: #0FA958;
   font-weight: semibold;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .product-card .btn-primary {
   background-color: #FF4949;
   border-color: #FF4949;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .product-card .btn-primary:hover {
   background-color: #CC3A3A;
-  border-color: #CC3A3A;
+  transform: scale(1.05);
 }
+
+/* Animación para los elementos */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-card {
+  animation: fadeInUp 0.5s ease-out;
+}
+
 
 /* Footer */
 footer {
