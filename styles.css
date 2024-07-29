@@ -112,9 +112,7 @@
     padding: 20px 0;
     color: #e4e2dd;
   }
-  footer .col-md-4 {
-    margin-bottom: 20px;
-  }
+
   footer h5 {
     font-family: 'Aileron Black', sans-serif;
     margin-bottom: 10px;
@@ -153,3 +151,24 @@
     border-top: 1px solid #444444;
     margin-top: 20px;
   }
+
+  .input-underline {
+    border: none; /* Elimina todos los bordes */
+    border-bottom: 1px solid #2B2B2B; /* Agrega una línea inferior */
+    outline: none; /* Elimina el contorno que aparece al enfocar */
+    padding: 8px 0; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+.input-underline:focus {
+    border-bottom-color: #2B2B2B; /* Cambia el color de la línea al enfocar */
+}
+
+.social-icons i {
+  margin-right: 10px; /* Espacio a la derecha de cada ícono */
+}
+
+/* Elimina el margen derecho del último ícono si no quieres espacio extra */
+.social-icons i:last-child {
+  margin-right: 0;
+}
