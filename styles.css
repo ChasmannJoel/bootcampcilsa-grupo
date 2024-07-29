@@ -10,6 +10,12 @@
     font-family: 'Aileron Light';
     src: url('recursos/aileron.light.otf') format('opentype');
   }
+  
+  :root {
+    --color-primario: #2B2B2B;
+    --color-secundario: #e4e2dd;
+  }
+
   body {
     font-family: 'Inter', sans-serif;
     background-color: white;
