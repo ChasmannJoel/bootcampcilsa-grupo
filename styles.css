@@ -1,3 +1,143 @@
+/* General */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF;
+  color: #2B2B2B;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2B2B2B;
+}
+
+.navbar-brand img {
+  width: 120px;
+}
+
+.nav-link {
+  color: #FFFFFF !important;
+}
+
+.nav-link:hover {
+  color: #FF4949 !important;
+}
+
+.dropdown-menu {
+  background-color: #2B2B2B;
+}
+
+.dropdown-item {
+  color: #FFFFFF;
+}
+
+.dropdown-item:hover {
+  color: #FF4949;
+  background-color: transparent;
+}
+
+/* Jumbotron */
+.main-section {
+  background-color: #5e5c5c;
+  color: #FFFFFF;
+  padding: 100px 0;
+  margin-top: 56px; /* Ajusta para el alto de la navbar fija */
+}
+
+.main-section .display-4 {
+  font-family: 'Aileron Black', sans-serif;
+}
+
+.main-section .lead {
+  font-family: 'Aileron Light', sans-serif;
+}
+
+/* Productos Destacados */
+.product-card {
+  background-color: #FFFFFF;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card .card-title {
+  font-family: 'Aileron', sans-serif;
+  font-weight: bold;
+}
+
+.product-card .card-text {
+  color: #0FA958;
+  font-weight: semibold;
+}
+
+.product-card .btn-primary {
+  background-color: #FF4949;
+  border-color: #FF4949;
+}
+
+.product-card .btn-primary:hover {
+  background-color: #CC3A3A;
+  border-color: #CC3A3A;
+}
+
+/* Footer */
+footer {
+  background-color: #2B2B2B;
+  color: #FFFFFF;
+  padding: 40px 0;
+}
+
+footer h5 {
+  font-family: 'Aileron', sans-serif;
+  font-weight: bold;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #FF4949;
+  text-decoration: none;
+}
+
+.footer-socials {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-socials li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-socials a {
+  color: #e4e2dd;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #FF4949;
+}
 
 @font-face {
     font-family: 'Aileron Black';
