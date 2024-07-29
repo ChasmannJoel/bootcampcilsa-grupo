@@ -216,3 +216,22 @@ footer ul li a:hover {
   font-family: "Aileron Light";
   src: url("recursos/aileron.light.otf") format("opentype");
 }
+
+/* Estilos para el mensaje de éxito */
+#mensaje-exito {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #d8fae0; /* Color verde para éxito */
+  color: #444444; /* Texto blanco */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1050; /* Asegúrate de que esté encima de otros elementos */
+  /* display: none; */
+  animation: fadeInOut 4s forwards; /* Animación para desaparecer después de unos segundos */
+}

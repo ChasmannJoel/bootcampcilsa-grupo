@@ -80,102 +80,64 @@
 </div>
 -->
 
-    <!--formulario de contacto-->
-    <div style="padding: 15px"></div>
-    <section id="contacto" class="content mt-5">
-      <div class="row mt-5">
-        <div class="col-4 container p-5" style="background-color: #e4e2dd">
-          <div class="row">
-            <h5 class="mb-3">INFORMACIÓN DE CONTACTO</h5>
-            <p class="mb-5">El lugar que estabas buscando</p>
-            <div class="col-md-12">
-              <div class="d-flex flex-column">
-                <a href="#" class="text-decoration-none text-dark d-block mb-5"
-                  ><i class="bi bi-telephone-fill pr-4"></i>Telefono</a
-                >
-                <a href="#" class="text-decoration-none text-dark d-block mb-5"
-                  ><i class="bi bi-envelope-fill pr-4"></i>basic@gmail.com</a
-                >
-                <a href="#" class="text-decoration-none text-dark d-block"
-                  ><i class="bi bi-geo-alt-fill pr-4"></i>Rivadavia 2567, Mar
-                  del Plata, Buenos Aires, Argentina</a
-                >
-              </div>
+<!--formulario de contacto-->
+<div style="padding: 15px;"></div>
+<section id="contacto" class="content mt-5">
+    <div class="row mt-5">
+        <div class="col-4 container p-5" style="background-color: #e4e2dd;">
+            <div class="row">
+                <h5 class="mb-3">INFORMACIÓN DE CONTACTO</h5>
+                <p class="mb-5">El lugar que estabas buscando</p>
+                <div class="col-md-12">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="text-decoration-none text-dark d-block mb-5"><i class="bi bi-telephone-fill pr-4"></i>Telefono</a>
+                        <a href="#" class="text-decoration-none text-dark d-block mb-5"><i class="bi bi-envelope-fill pr-4"></i>basic@gmail.com</a>
+                        <a href="#" class="text-decoration-none text-dark d-block "><i class="bi bi-geo-alt-fill pr-4"></i>Rivadavia 2567, Mar del Plata, Buenos Aires, Argentina</a>
+                    </div>
+                </div>
+                <div class="social-icons ml-3 mt-5">
+                    <i class="bi bi-twitter-x"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+                
+                
             </div>
-            <div class="social-icons ml-3 mt-5">
-              <i class="bi bi-twitter-x"></i>
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-whatsapp"></i>
-            </div>
-          </div>
         </div>
         <div class="col-8 p-5">
-          <form id="contactForm" onsubmit="return enviarFormulario()">
-            <div class="row pb-5">
-              <div class="col-md-6 form-group">
-                <label for="nombre">Nombre</label>
-                <input
-                  type="text"
-                  class="input-underline form-control"
-                  id="nombre"
-                  placeholder="Ingresa su nombre"
-                  required
-                />
-              </div>
-              <div class="col-md-6 form-group">
-                <label for="apellido">Apellido</label>
-                <input
-                  type="text"
-                  class="input-underline form-control"
-                  id="apellido"
-                  placeholder="Ingresa su apellido"
-                  required
-                />
-              </div>
+                <form id="contactForm" onsubmit="return enviarFormulario()">
+                    <div class="row pb-5">
+                        <div class="col-md-6 form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="input-underline form-control" id="nombre" placeholder="Ingresa su nombre" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" class="input-underline form-control" id="apellido" placeholder="Ingresa su apellido" required>
+                        </div>
+                    </div>
+                    <div class="row pb-5">
+                        <div class="col-md-6 form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="input-underline form-control" id="email" placeholder="Ingresa su email" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="telefono">Telefono</label>
+                            <input type="text" class="input-underline form-control" id="telefono" placeholder="Ingresa su número" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="input-underline form-control" id="mensaje" rows="3" placeholder="Ingresa su mensaje"></textarea>
+                    </div>
+                    <div class=" d-md-flex justify-content-md-end mt-5">  
+                        <button type="submit" class="btn btn-dark ">Enviar Mensaje</button>
+                    </div>                
+            </form> 
+            <div id="mensaje-exito" class="alert alert-success d-none mt-3" role="alert">
+                Mensaje enviado con éxito!
             </div>
-            <div class="row pb-5">
-              <div class="col-md-6 form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  class="input-underline form-control"
-                  id="email"
-                  placeholder="Ingresa su email"
-                  required
-                />
-              </div>
-              <div class="col-md-6 form-group">
-                <label for="telefono">Telefono</label>
-                <input
-                  type="text"
-                  class="input-underline form-control"
-                  id="telefono"
-                  placeholder="Ingresa su número"
-                  required
-                />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="mensaje">Mensaje</label>
-              <textarea
-                class="input-underline form-control"
-                id="mensaje"
-                rows="3"
-                placeholder="Ingresa su mensaje"
-              ></textarea>
-            </div>
-            <div class="d-md-flex justify-content-md-end mt-5">
-              <button type="submit" class="btn btn-dark">Enviar Mensaje</button>
-            </div>
-          </form>
-          <div
-            id="mensaje-exito"
-            class="alert alert-success d-none mt-3"
-            role="alert"
-          >
-            Mensaje enviado con éxito!
-          </div>
         </div>
       </div>
     </section>
@@ -215,8 +177,8 @@
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
