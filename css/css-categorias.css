@@ -1,6 +1,7 @@
   .contenedor {
     padding-top: 30vh;
     padding-bottom: 30vh;
+    display: flex;
   }
 
   .col-custom {
@@ -16,4 +17,6 @@
   margin-right: 1vh;
  }
 
- 
+.fontnegra {
+  color: var(--color-primario);
+}
