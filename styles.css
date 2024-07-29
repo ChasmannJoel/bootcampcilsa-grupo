@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Aileron Black';
     src: url('recursos/aileron.black.otf') format('opentype');
@@ -21,6 +22,7 @@
     background-color: white;
     color: #2B2B2B;
   }
+  /* navbar */
   .navbar {
     background-color: #2B2B2B;
     padding: 1rem;
@@ -50,7 +52,61 @@
     background-color: #FF4949;
     color: #e4e2dd;
   }
-  
+
+.product-title {
+  font-family: 'Aileron Black', sans-serif;
+  color: #2B2B2B;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.product-category {
+  font-family: 'Aileron Bold', sans-serif;
+  color: #0FA958;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.product-price {
+  font-family: 'Aileron Bold', sans-serif;
+  color: #9e62ff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.btn-buy {
+  background-color: #D43F3F;
+  color:#2B2B2B;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+.btn-buy:hover {
+  background-color: #0FA958;
+  color: #2B2B2B;
+}
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.product-description {
+  font-family: 'Aileron Light', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #2B2B2B;
+}
+.additional-info {
+  margin-top: 300px;
+}
+.additional-info h2 {
+  font-family: 'Aileron Black', sans-serif;
+  color: #2B2B2B;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+/* footer */
   footer {
     background-color: #2B2B2B;
     padding: 20px 0;
@@ -62,12 +118,12 @@
   footer h5 {
     font-family: 'Aileron Black', sans-serif;
     margin-bottom: 10px;
-    color: ##e4e2dd;
+    color: #e4e2dd;
   }
   footer p {
     font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
-    color: ##e4e2dd;
+    color: #e4e2dd;
   }
   footer a {
     color: #e4e2dd;

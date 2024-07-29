@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalle del Producto - BASIC</title>
+  <title>BASIC</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link href="../styles.css" rel="stylesheet">
@@ -38,38 +39,36 @@
       </ul>
     </div>
   </nav>
-
-  
-
-<div class="row additional-info">
-  <div class="col-12">
-    <h4 >Más Información</h4>
-    <p >Aquí puedes añadir más detalles como políticas de devolución, reseñas de clientes, y otra información relevante que pueda ayudar a los usuarios a tomar una decisión de compra.</p>
+<div class="container mt-5 pt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../recursos/remera oversize.png" alt="buzo canguro de frisa negro" class="product-image">
+    </div>
+    <div class="col-md-6">
+      <h2 class="product-title">Remera Oversize Negra</h2>
+      <p class="product-category">Remeras</p>
+      <p class="product-price">$20000</p>
+      <p class="product-description">Remera oversize de alta calidad en color negro, ideal para un look casual y cómodo. Fabricada con algodón suave y transpirable, perfecta para usar durante todo el año. Disponible en varias tallas para un ajuste perfecto.</p>
+      <div class="form-group">
+        <label for="sizeSelect">Seleccione un talle:</label>
+        <select class="form-control" id="sizeSelect">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+      </div>
+      <button class="btn btn-buy" onclick="addToCart()">Añadir al Carrito</button>
+      <p id="cartMessage" class="mt-3" style="display: none; color: green;">Producto añadido al carrito correctamente.</p>
+    </div>
+  </div>
+  <div class="row additional-info mt-5">
+    <div class="col-12">
+      <h4>Más Información</h4>
+      <p>Esta remera oversize negra es una prenda esencial en cualquier guardarropa. Es fácil de combinar con cualquier atuendo y proporciona un estilo moderno y relajado. Lavable a máquina, no se decolora y mantiene su forma después de múltiples lavados. Disponible en varias tallas para que encuentres el ajuste perfecto. Consulta nuestras políticas de devolución para más detalles.</p>
+    </div>
   </div>
 </div>
-</div>
-<div class="row additional-info">
-  <div class="col-12">
-    <h4 >Más Información</h4>
-    <p >Aquí puedes añadir más detalles como políticas de devolución, reseñas de clientes, y otra información relevante que pueda ayudar a los usuarios a tomar una decisión de compra.</p>
-  </div>
-</div>
-</div>
-<div class="row additional-info">
-  <div class="col-12">
-    <h4 >Más Información</h4>
-    <p >Aquí puedes añadir más detalles como políticas de devolución, reseñas de clientes, y otra información relevante que pueda ayudar a los usuarios a tomar una decisión de compra.</p>
-  </div>
-</div>
-</div>
-<div class="row additional-info">
-  <div class="col-12">
-    <h4 >Más Información</h4>
-    <p >Aquí puedes añadir más detalles como políticas de devolución, reseñas de clientes, y otra información relevante que pueda ayudar a los usuarios a tomar una decisión de compra.</p>
-  </div>
-</div>
-</div>
-
 <!-- Footer -->
 <footer class="mt-5">
   <div class="container">
@@ -97,14 +96,17 @@
     </div>
   </div>
 </footer>
- 
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function addToCart() {
+      const messageElement = document.getElementById('cartMessage');
+      messageElement.style.display = 'block';
+      setTimeout(() => {
+        messageElement.style.display = 'none';
+      }, 3000);
+    }
+  </script>
 </body>
 </html>
-
-
-
-  
