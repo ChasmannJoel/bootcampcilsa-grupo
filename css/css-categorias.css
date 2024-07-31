@@ -20,3 +20,10 @@
 .fontnegra {
   color: var(--color-primario);
 }
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .contenedor {
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+  }
+}
