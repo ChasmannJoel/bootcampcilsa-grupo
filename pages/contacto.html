@@ -1,48 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalle del Producto - BASIC</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link href="../styles.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle del Producto - BASIC</title>
+    <script
+      src="https://kit.fontawesome.com/11fe7ac5ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../recursos/logoBlanco.png" alt="BASIC Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="categorias.html"
+              id="productosDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Productos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="productosDropdown">
+              <a class="dropdown-item" href="categorias.html"
+                >Todos los productos</a
+              >
+              <a class="dropdown-item" href="buzos.html">Buzos</a>
+              <a class="dropdown-item" href="remeras.html">Remeras</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <!-- Menú de Navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <a class="navbar-brand" href="../index.html">
-      <img src="../recursos/logoBlanco.png" alt="BASIC Logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html">Inicio</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="categorias.html" id="productosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Productos
-          </a>
-          <div class="dropdown-menu" aria-labelledby="productosDropdown">
-            <a class="dropdown-item" href="categorias.html">Todos los productos</a>
-            <a class="dropdown-item" href="buzos.html">Buzos</a>
-            <a class="dropdown-item" href="remeras.html">Remeras</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  
-<!--
+    <!--
 <div class="row additional-info">
   <div class="col-12">
     <h4 >Más Información</h4>
@@ -52,11 +81,11 @@
 -->
 
 <!--formulario de contacto-->
-<div style="padding: 15px;"></div>
+
 <section id="contacto" class="content mt-5">
     <div class="row mt-5">
-        <div class="col-4 container p-5" style="background-color: #e4e2dd;">
-            <div class="row">
+        <div class="col-md-4 container p-5" style="background-color: #e4e2dd;">
+            <div class="row ">
                 <h5 class="mb-3">INFORMACIÓN DE CONTACTO</h5>
                 <p class="mb-5">El lugar que estabas buscando</p>
                 <div class="col-md-12">
@@ -76,7 +105,7 @@
                 
             </div>
         </div>
-        <div class="col-8 p-5">
+        <div class="col-md-8 p-5">
                 <form id="contactForm" onsubmit="return enviarFormulario()">
                     <div class="row pb-5">
                         <div class="col-md-6 form-group">
@@ -100,7 +129,7 @@
                     </div>
                     <div class="form-group">
                         <label for="mensaje">Mensaje</label>
-                        <textarea class="input-underline form-control" id="mensaje" rows="3" placeholder="Ingresa su mensaje"></textarea>
+                        <textarea class="input-underline form-control" id="mensaje" rows="1" placeholder="Ingresa su mensaje"></textarea>
                     </div>
                     <div class=" d-md-flex justify-content-md-end mt-5">  
                         <button type="submit" class="btn btn-dark ">Enviar Mensaje</button>
@@ -110,24 +139,26 @@
                 Mensaje enviado con éxito!
             </div>
         </div>
-      
-</div>
-            
-</section>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <img src="../recursos/logoMinBlanco.png" alt="BASIC Logo" class="img-fluid" />
+            <img
+              src="../recursos/logoMinBlanco.png"
+              alt="BASIC Logo"
+              class="img-fluid"
+            />
           </div>
           <div class="col-md-4">
             <h5>Menú</h5>
             <ul class="list-unstyled">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="#">Productos</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="/pages/categorias.html">Productos</a></li>
+              <li><a href="/pages/contacto.html">Contacto</a></li>
             </ul>
           </div>
           <div class="col-md-4">
@@ -145,14 +176,10 @@
         </div>
       </div>
     </footer>
- 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-  
