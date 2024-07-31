@@ -16,3 +16,16 @@ Este es un sitio web responsivo para una tienda online que permite a los usuario
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/xxx/StoreOnline.git
+## Información Adicional
+
+### Proceso de Desarrollo
+
+- **División de Tareas**: El equipo se dividió las tareas y trabajó mediante la metodología Git Flow, lo que permitió una integración continua y una organización efectiva del trabajo.
+- **Identidad del Sitio**: Creamos una identidad visual para la tienda online, seleccionando colores y tipografías que representen la marca de manera coherente y atractiva.
+- **Diseño**: Utilizamos Figma para la maqueta del sitio, proporcionando una visión clara del diseño antes de la implementación.
+- **Desarrollo con Bootstrap**: Implementamos los componentes del sitio web utilizando Bootstrap, lo que facilitó la creación de un diseño responsivo y consistente.
+- **Colaboración**: Mantuvimos una comunicación continua dentro del equipo, con cada miembro trabajando en una rama separada. Las ramas individuales se combinaron en una rama principal antes de fusionarse en `master`.
+
+### Equipo de Trabajo
+
+El desarrollo de StoreOnline fue un esfuerzo colaborativo donde cada miembro del equipo contribuyó a diferentes aspectos del proyecto, desde el diseño hasta la implementación y pruebas.
