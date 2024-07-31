@@ -15,7 +15,7 @@ Este es un sitio web responsivo para una tienda online que permite a los usuario
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/xxx/StoreOnline.git
+   git clone https://github.com/ChasmannJoel/bootcampcilsa-grupo
 ## Información Adicional
 
 ### Proceso de Desarrollo
