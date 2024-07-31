@@ -25,5 +25,6 @@
 @media (max-width: 768px) {
   .contenedor {
       flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+      padding-top: 10vh;
   }
 }
