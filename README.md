@@ -1,10 +1,10 @@
-# StoreOnline :shirt: 
+# StoreOnline 
 
-## Descripción
+## Descripción 📑
 
 Este es un sitio web responsivo para una tienda online que permite a los usuarios explorar productos desde diferentes dispositivos, incluyendo computadoras de escritorio, tablets y celulares.
 
-## Características
+## Características 📝
 
 - Diseño responsivo utilizando Bootstrap para garantizar una experiencia de usuario consistente en diferentes dispositivos y tamaños de pantalla.
 - Página principal que muestra los productos destacados y las promociones actuales de la tienda.
@@ -26,6 +26,6 @@ Este es un sitio web responsivo para una tienda online que permite a los usuario
 - **Desarrollo con Bootstrap**: Implementamos los componentes del sitio web utilizando Bootstrap, lo que facilitó la creación de un diseño responsivo y consistente.
 - **Colaboración**: Mantuvimos una comunicación continua dentro del equipo, con cada miembro trabajando en una rama separada. Las ramas individuales se combinaron en una rama principal antes de fusionarse en `master`.
 
-### Equipo de Trabajo :steam_locomotive:
+### Equipo de Trabajo 👷
 
 El desarrollo de StoreOnline fue un esfuerzo colaborativo donde cada miembro del equipo contribuyó a diferentes aspectos del proyecto, desde el diseño hasta la implementación y pruebas.
